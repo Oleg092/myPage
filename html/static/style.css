@@ -1,12 +1,13 @@
 body {
 	background-color: #F6FAF2;
 	opacity: .85;
+	overflow: hidden;
+	margin-right: 16px;
 }
 
 div {
 	margin: 20px;
 	border: 1px solid white;
-	/*font-size: 20px;*/
 }
 
 img {
@@ -55,30 +56,37 @@ p {
 /*for inc photo*/
 	.incWindow {
 		margin:0 auto;
-		position: absolute;
-		height:100%;
-		width:100%;
+		position: fixed;
+		height: 100%;
+		width: 100%;
 		top:0;
-		left:0;
-		display:none;
-		text-align:center;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		display: none;
+		text-align: center;
 	}
 
 	.windowBg {
-		margin:0 auto;
-		background:rgba(0,0,0,0.4);
-		position:absolute;
-		z-index:1;
-		height:100%;
-		width:100%;
+		margin: 0 auto;
+		background: rgba(0,0,0,0.4);
+		position: fixed;
+		z-index: 1;
+		height: 100%;
+		width: 100%;
+		top: 0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
 	}
 
 
 	.incPhoto {
 		position: relative;
-		margin:0 auto;
-		z-index:2;
-		max-height:50%;
-		max-width:50%;
-		margin:10% 0 0 0;
+		margin: 0 auto;
+		z-index: 2;
+		max-height: 50%;
+		max-width: 50%;
+		margin: 10% 0 0 0;
 	}
