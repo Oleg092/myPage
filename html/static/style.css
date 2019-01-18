@@ -1,13 +1,12 @@
 body {
 	background-color: #F6FAF2;
 	opacity: .85;
-	overflow: hidden;
 	margin-right: 16px;
 }
 
 div {
 	margin: 20px;
-	border: 1px solid white;
+	border: 1px solid #F6FAF2;
 }
 
 img {
