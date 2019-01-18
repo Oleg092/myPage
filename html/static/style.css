@@ -1,6 +1,6 @@
 body {
 	background-color: #F6FAF2;
-	opacity: .85;
+	opacity: 0.85;
 	margin-right: 16px;
 }
 
@@ -15,35 +15,33 @@ img {
     box-shadow: 0 0 10px #666;
 }
 
-#avatar {
+.quirk {
+	display: flex;
+}
+
+.avatar {
+	flex-shrink: 0;
 	margin: 0 auto;
 	margin-left: 20px;
-	float: left;
-	width: 15%;
-	height: 200px;
+	width: 130px;
+	height: 160px;
 	margin-right: 20px;
 }
 
-#photo {
-	margin-left: 15%;
+.photo {
 	position: relative;
-	width: 70%;
+	width: 100%;
 	height: 100%;
 }
 
-#commonInfo {
-	overflow: auto;
-	height: 200px;
+.content {
+	
 }
 
-#content {
-	overflow: auto;
-	height: 600px;
+.footerLabel {
+	text-align: right; margin: 20px; color: green
 }
 
-#footerLabel {
-	color: green;
-}
 footer {
 	flex: 0 0 auto;
 }
@@ -53,39 +51,38 @@ p {
 }	
 
 /*for inc photo*/
-	.incWindow {
-		margin:0 auto;
-		position: fixed;
-		height: 100%;
-		width: 100%;
-		top:0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 1;
-		display: none;
-		text-align: center;
-	}
+.incWindow {
+	margin:0 auto;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	display: none;
+	text-align: center;
+}
 
-	.windowBg {
-		margin: 0 auto;
-		background: rgba(0,0,0,0.4);
-		position: fixed;
-		z-index: 1;
-		height: 100%;
-		width: 100%;
-		top: 0;
-    	bottom: 0;
-    	left: 0;
-    	right: 0;
-	}
+.windowBg {
+	margin: 0 auto;
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
-
-	.incPhoto {
-		position: relative;
-		margin: 0 auto;
-		z-index: 2;
-		max-height: 50%;
-		max-width: 50%;
-		margin: 10% 0 0 0;
-	}
+.incPhoto {
+	position: relative;
+	margin: 0 auto;
+	z-index: 2;
+	max-height: 50%;
+	max-width: 50%;
+	margin: 10% 0 0 0;
+}
